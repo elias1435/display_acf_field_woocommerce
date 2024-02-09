@@ -8,7 +8,7 @@ function storage_location_of_order_items( $item_id, $item, $product ){
 
     // Get your ACF product value (replace the slug by yours below)
     if( $acf_value = get_field( 'course_date', $product->get_id() ) ) {
-        $acf_label = __('Course Date: ');
+        $acf_label = '<strong>' . __('Course Date: ') . '</strong>';
         // Outputing the value of the "Course Date" for this product item
         echo '<div class="course-date">' . $acf_label . $acf_value . '</div>';
     }
